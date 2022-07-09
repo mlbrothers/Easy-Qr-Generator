@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta name="description" content="QR Code Generator">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/basic.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="{{ url_for('static', filename='js/basic.js') }}" type="text/javascript"></script>
+    <title>QR Code for WhatsApp</title>
+</head>
+<body>
+    <div class="heading">
+        <center><h1>Easy QR Generator</h1></center>
+        <center><h2>Generate and scan QR with one click</h2></center>
+    </div>
+    <div class="container">
+    <div class="row">
+        <form method="post" action="/sm/whatsapp" enctype="multipart/form-data">
+            <dl>
+                <p>
+                    <center><label for="url">Enter Text</label>&emsp;
+                    <input type="text" name="url" required></center>
+                </p>
+            </dl>
+            <p>
+                <center><input type="submit" value="Submit" class="btn btn-info" onclick="func()"></center>
+            </p>
+        </form>
+        <p>
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <ul>
+                {% for message in messages %}
+                  <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+              {% endif %}
+            {% endwith %}
+        </p>
+        {% if filename %}
+            <div class="output" id="output">
+                <center><img src="{{ url_for('display_image_wh', filename=filename) }}" onload="func()" class="img" id="img"></center>
+            </div>
+            <div id="download-btn"></div>
+        {% endif %}
+    </div>
+    </div>
+    <div class="footer">
+        <h3 class="found">Found bug ?</h3>
+        <p>Contact us</p>
+        <a class="email""" href = "mailto: siddharth2000patel@gmail.com">siddharth2000patel@gmail.com</a>
+    </div>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sm.css') }}">
+</body>
+</html>

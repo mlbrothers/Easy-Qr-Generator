@@ -1,0 +1,146 @@
+body{
+    background: #e0e0e0;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+}
+
+h1{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 1%;
+}
+
+h2{
+    margin-top: 0.5%;
+    font-weight: lighter;
+    padding-bottom: 1%;
+}
+
+h3{
+    font-size: 22px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    margin: 2px 0;
+    margin-bottom: 0.75%;
+    font-size: 20px;
+}
+
+.heading{
+    background-color: #128275;
+}
+
+.footer{
+    text-align: center;
+    background-color: #128275;
+    padding-bottom: 1.5%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.found{
+    padding: 3px 0;
+    margin: 1px 0;
+    margin-top: 0.3%;
+}
+
+.email{
+    font-size: 22px;
+    color: blue;
+}
+
+.output{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.output>img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+input[type=text]{
+    width: 40%;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-bottom: gray solid 2px;
+    background: #e0e0e0;
+    font-size: 20px
+}
+
+input[type=text]:focus{
+    border-color: black;
+}
+
+label{
+    font-size: 22px;
+}
+
+input[type=submit]{
+    width: 10%;
+    line-height: 150%;
+    border-radius: 20px;
+    border: none;
+    background: gray;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    border: 1px solid black;
+    background: white;
+}
+
+#download{
+    margin-top: 0.7%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: gray;
+    padding: 0.3% 0;
+    margin: 0.75% auto;
+    width: 20%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#download:hover{
+    border: 1px solid black;
+    background: white;
+}
+
+@media only screen and (max-width: 1010px){
+    span{
+        display: block;
+        font-size: 16px;
+    }
+    input[type=submit]{
+        width: 30%;
+    }
+    #download{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    span{
+        display: block;
+        font-size: 16px;
+    }
+    label{
+        font-size: 16px;
+    }
+    input[type=submit]{
+        width: 40%;
+    }
+    #download{
+        width: 60%;
+    }
+}

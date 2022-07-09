@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <title>QR for Social Media</title>
+</head>
+<body>
+    <div class="heading">
+        <center><h1>Easy QR Generator</h1></center>
+        <center><h2>Generate and scan QR with one click</h2></center>
+    </div>
+    <div class="container" id="container">
+        <a href="{{ url_for('facebook') }}"><div class="comp" id="one">
+            <h3>Facebook</h3>
+            <img class="qr-scan" src="{{ url_for('static',filename='sample-images/fb.png') }}" alt="Facebook QR">
+            </div>
+        </a>
+        <a href="{{ url_for('telegram') }}"><div class="comp" id="two">
+            <h3>Telegram</h3>
+            <img class="basic-qr" src="{{ url_for('static',filename='sample-images/te.png') }}" alt="Telegram QR">
+            </div>
+        </a>
+        <a href="{{ url_for('youtube') }}"><div class="comp" id="three">
+            <h3>Youtube</h3>
+            <img class="colour-qr" src="{{ url_for('static',filename='sample-images/yo.png') }}" alt="Youtube QR">
+            </div>
+        </a>
+        <a href="{{ url_for('instagram') }}"><div class="comp" id="four">
+            <h3>Instagram</h3>
+            <img class="social-media-qr" src="{{ url_for('static',filename='sample-images/in.png') }}" alt="Instagram QR">
+            </div>
+        </a>
+        <a href="{{ url_for('whatsapp') }}"><div class="comp" id="five">
+            <h3>WhatsApp</h3>
+            <img class="image-qr" src="{{ url_for('static',filename='sample-images/wh.png') }}" alt="WhatsApp QR">
+            </div>
+        </a>
+        <a href="{{ url_for('twitter') }}"><div class="comp" id="six">
+            <h3>Twitter</h3>
+            <img class="about-qr" src="{{ url_for('static',filename='sample-images/tw.png') }}" alt="Twitter QR">
+            </div>
+        </a>
+        <a href="{{ url_for('reddit') }}"><div class="comp" id="four">
+            <h3>Reddit</h3>
+            <img class="social-media-qr" src="{{ url_for('static',filename='sample-images/re.png') }}" alt="Reddit QR">
+            </div>
+        </a>
+        <a href="{{ url_for('github') }}"><div class="comp" id="five">
+            <h3>GitHub</h3>
+            <img class="image-qr" src="{{ url_for('static',filename='sample-images/gi.png') }}" alt="GitHub QR">
+            </div>
+        </a>
+        <a href="{{ url_for('spotify') }}"><div class="comp" id="six">
+            <h3>Spotify</h3>
+            <img class="about-qr" src="{{ url_for('static',filename='sample-images/sp.png') }}" alt="Spotify QR">
+            </div>
+        </a>
+    </div>
+    <div class="footer">
+        <h3 class="found">Found bug ?</h3>
+        <p>Contact us</p>
+        <a class="email""" href = "mailto: siddharth2000patel@gmail.com">siddharth2000patel@gmail.com</a>
+    </div>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/social-media.css') }}">
+</body>
+</html>
