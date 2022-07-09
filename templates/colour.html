@@ -10,7 +10,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
     <script src="{{ url_for('static', filename='js/basic.js') }}" type="text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7L2KEG5Z7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M7L2KEG5Z7');
+    </script>
     <title>Colour QR Code</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='sample-images/favicon.ico') }}">
+    <meta name="description" content="Generate artistic colour QR code easily with one click. Customized color QR codes">
 </head>
 <body>
     <div class="heading">
