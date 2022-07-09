@@ -110,3 +110,9 @@ p{
         height: 100px;
     }
 }
+
+.twitter-dm-button{
+    color: blue;
+    font-size: 22px;
+    font-weight: bold;
+}

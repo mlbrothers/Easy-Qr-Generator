@@ -1,4 +1,4 @@
-from flask import Flask, flash, request, redirect, url_for, render_template, send_file
+from flask import Flask, flash, request, redirect, url_for, render_template, send_file, send_from_directory
 import os
 from werkzeug.utils import secure_filename
 import cv2
@@ -556,3 +556,7 @@ def display_image(filename):
 
 if __name__ == "__main__":
     app.run()
+
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])

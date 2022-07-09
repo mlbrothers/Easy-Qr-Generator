@@ -144,3 +144,9 @@ input[type=submit]:hover{
         width: 60%;
     }
 }
+
+.twitter-dm-button{
+    color: blue;
+    font-size: 22px;
+    font-weight: bold;
+}
