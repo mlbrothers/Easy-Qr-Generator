@@ -25,18 +25,22 @@
 </head>
 <body>
     <div class="heading">
-        <center><h1>Easy QR Generator</h1></center>
-        <center><h2>Generate and scan QR with one click</h2></center>
+        <div class="left-div">
+            <h1>Easy QR Generator</h1>
+            <h2>Generate and scan QR with one click</h2>
+        </div>
+        <div class="right-div">
+            <a class="about" href="{{ url_for('blog') }}">About QR</a>&emsp;&emsp;
+            <a class="home" href='/'>Home</a>
+        </div>
     </div>
     <div class="container">
     <div class="row">
         <form method="post" action="/colour" enctype="multipart/form-data">
             <dl>
                 <span>
-                <p>
                     <center><label for="url">Enter Text</label>
-                    <input type="text" name="url" required></center>
-                </p>
+                    <input type="text" name="url" required></center><br>
                 </span>
                 <span>
                     <center><label for="main-color">Select main color</label>
@@ -75,7 +79,8 @@
     </div>
     </div>
     <div class="footer">
-        <p>Contact us</p>
+        <h3 class="found">Found bug ?</h3>
+        <p class="contact">Contact us</p>
         <a href="https://twitter.com/messages/compose?recipient_id=858342629699973121" class="twitter-dm-button" data-screen-name="@furni">@Siddharth1India</a>
     </div>
 </body>

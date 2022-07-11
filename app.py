@@ -560,3 +560,7 @@ if __name__ == "__main__":
 @app.route('/sitemap.xml')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')

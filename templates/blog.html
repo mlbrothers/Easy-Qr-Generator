@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#128275">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7L2KEG5Z7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M7L2KEG5Z7');
+    </script>
+    <title>About QR</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='sample-images/favicon.ico') }}">
+    <meta name="description" content="Generate colour, image, social media, artistic, customizable QR code easily with one click. Best QR code generator">
+</head>
+<body>
+    <div class="heading">
+        <div class="left-div">
+            <h1>Easy QR Generator</h1>
+            <h2>Generate and scan QR with one click</h2>
+        </div>
+        <div class="right-div">
+            <a class="about" href="{{ url_for('blog') }}">About QR</a>&emsp;&emsp;
+            <a class="home" href='/'>Home</a>
+        </div>
+    </div>
+
+    <p>
+        Full form of QR is Quick Response. It was proposed in 1994 by Japanese barcode developer company denso wave.<br>
+        QR code typically transforms any kind of digital information into a 2D matrix like shape with black square entries in white background. 
+        <br> Typical QR code is shown in the below diagram.
+        It can store any information into this 2D grid. Therefore, it can be used anywhere when some digital contractual information processing is required.<br>Applications can be product tracking, item identification, time tracking, location tracking, document management, general marketing and many more.<br>
+        <br> There are mainly two types of QR: <br>
+        1. Static QR code <br>
+        2. Dynamic QR code <br> 
+        <br> Static QR code can store information only which do not change over time period. It is one-time storage. For example, phone number, SMS, Email etc. QR code which store these kind of information are static as these information do not alter over time. When someone other person scans this QR code, the device will understand the information stored in the scanned QR code.
+        <br><br> Dynamic QR codes are those which store dynamic information such is location tracking, product shippibg status etc.
+        <br> QR code is a very easy way from which we can store as much complex information as we want in it.
+    </p>
+    
+    <div class="footer">
+        <h3 class="found">Found bug ?</h3>
+        <p class="contact">Contact us</p>
+        <a href="https://twitter.com/messages/compose?recipient_id=858342629699973121" class="twitter-dm-button" data-screen-name="@furni">@Siddharth1India</a>
+    </div>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/blog.css') }}">
+</body>
+</html>

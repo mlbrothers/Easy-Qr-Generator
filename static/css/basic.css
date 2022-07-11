@@ -7,17 +7,18 @@ body{
 h1{
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 1%;
+    padding-top: 15px;
 }
 
 h2{
-    margin-top: 0.5%;
+    margin-top: 7px;
     font-weight: lighter;
-    padding-bottom: 1%;
+    padding-bottom: 15px;
 }
 
 h3{
-    font-size: 22px;
+    padding-top: 10px;
+    font-size:22px;
     font-family: 'Signika Negative', sans-serif;
 }
 
@@ -26,7 +27,7 @@ a{
     color: black;
 }
 
-p{
+.contact{
     margin: 2px 0;
     margin-bottom: 0.75%;
     font-size: 20px;
@@ -34,26 +35,54 @@ p{
 
 .heading{
     background-color: #128275;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.left-div{
+    float: left;
+    padding-left: 1%;
+}
+
+.right-div{
+    float: right;
+    font-size: 22px;
+    padding-top: 2%;
+    margin-left: 55%;
+}
+
+.about{
+    transition-duration: 0.5s;
+}
+
+.about:hover{
+    cursor: pointer;
+    color: #95dbe5ff;
+}
+
+.home{
+    transition-duration: 0.5s;
+}
+
+.home:hover{
+    cursor: pointer;
+    color: #95dbe5ff;
 }
 
 .footer{
     text-align: center;
     background-color: #128275;
-    padding-bottom: 1.5%;
-    width: 100%;
     position: fixed;
+    padding: 10px 10px 20px 10px;
     bottom: 0;
+    width: 100%;
 }
 
 .found{
     padding: 3px 0;
     margin: 1px 0;
     margin-top: 0.3%;
-}
-
-.email{
-    font-size: 22px;
-    color: blue;
 }
 
 .output{
