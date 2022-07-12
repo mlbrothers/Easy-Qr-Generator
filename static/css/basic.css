@@ -35,12 +35,12 @@ a{
 
 .heading{
     background-color: #128275;
-    height: 100px;
+    height: auto;
     width: 100%;
-    display: flex;
+    /* display: flex; */
 }
 
-.left-div{
+/* .left-div{
     float: left;
     padding-left: 1%;
 }
@@ -50,7 +50,7 @@ a{
     font-size: 22px;
     padding-top: 2%;
     margin-left: 55%;
-}
+} */
 
 .about{
     transition-duration: 0.5s;

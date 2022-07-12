@@ -40,12 +40,12 @@ p{
 
 .heading{
     background-color: #128275;
-    height: 100px;
+    height: auto;
     width: 100%;
     margin: 0px auto;
 }
 
-.left-div{
+/* .left-div{
     float: left;
     padding-left: 1%;
 }
@@ -55,7 +55,7 @@ p{
     width: 15%;
     font-size: 22px;
     padding-top: 2%;
-}
+} */
 
 .about{
     transition-duration: 0.5s;
