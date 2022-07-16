@@ -179,3 +179,26 @@ input[type=submit]:hover{
     font-size: 22px;
     font-weight: bold;
 }
+
+.ad1{
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ad2{
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.ad-left{
+    height: 200px;
+    float: left;
+}
+
+.ad-right{
+    height: 200px;
+}
