@@ -138,7 +138,6 @@ img{
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    border: gray solid 1px;
 }
 
 .ad2{
@@ -146,7 +145,6 @@ img{
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    border: gray solid 1px;
 }
 
 .ad-left{
