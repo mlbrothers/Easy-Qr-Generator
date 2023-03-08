@@ -155,3 +155,11 @@ img{
 .ad-right{
     height: 200px;
 }
+.main_content{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+a>span{
+    color: blue;
+}
