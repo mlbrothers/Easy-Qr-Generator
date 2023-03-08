@@ -612,15 +612,6 @@ def display_image(filename):
     return send_file(file_object, mimetype='image/PNG')
 
 
-if __name__ == "__main__":
-    app.run()
-
-
-@app.route('/sitemap.xml')
-def static_from_root():
-    return send_from_directory(app.static_folder, request.path[1:])
-
-
 @app.route('/blog')
 def blog():
     return render_template('blog_home.html')
@@ -634,3 +625,12 @@ def what_is_qr():
 @app.route('/artistic_qr')
 def artistic_qr():
     return render_template('artistic_qr.html')
+
+
+if __name__ == "__main__":
+    app.run()
+
+
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
