@@ -125,6 +125,18 @@ img{
         grid-template-columns: 100%;
         height: 1200px;
     }
+    .comp{
+        height: 80%;
+        text-align: center;
+        border-radius: 48px;
+        background: #e0e0e0;
+        box-shadow: rgb(98, 98, 98) 20px 20px 45px 0px,
+                    rgb(255, 255, 255) -20px -20px 45px 0px;
+        width: 80%;
+        margin: 0 auto;
+        transition-duration: 0.5s;
+        font-family: 'Signika Negative', sans-serif;
+}
 }
 
 .twitter-dm-button{
